@@ -71,12 +71,15 @@ namespace SchoolSystem_Task3
                 Console.Write(i+1 + ". " + stuName[i] +"\n");
             }
             Console.WriteLine();
+
+
             Console.WriteLine("Student Grades : ");
             int[] grades = { 85, 92, 68, 75, 90 };
             foreach (int grade in grades) {
                 Console.Write(grade + "\n");
             }
             Console.WriteLine();
+
 
             Console.Write("Enter Student Name to search for him : ");
             string name=Console.ReadLine();
@@ -141,7 +144,7 @@ namespace SchoolSystem_Task3
             int choice = 0;
             do
             {
-                Console.Write("1. Display Students \n 2. Search for Student \n 3. Check Student Result \n 4. Exit \n Choose a number : ");
+                Console.WriteLine("1. Display Students \n 2. Search for Student \n 3. Check Student Result \n 4. Exit \n Choose a number : ");
                 choice = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
                 switch (choice) {
