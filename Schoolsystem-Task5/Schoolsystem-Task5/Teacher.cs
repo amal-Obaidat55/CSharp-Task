@@ -9,7 +9,7 @@ namespace Schoolsystem_Task5
     internal class Teacher : Person
     {
         public string Subject { get; set; }
-        public Teacher(string stuName, int stuAge, string sub) : base(stuName, stuAge)
+        public Teacher(string TName, int TAge, string sub) : base(TName, TAge )
         {
             Subject = sub;
         }

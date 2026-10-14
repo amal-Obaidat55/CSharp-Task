@@ -10,6 +10,11 @@ namespace Schoolsystem_Task5
     {
         static void Main(string[] args)
         {
+            //We can't access to this feild outside the person class because it's private so the access scope of this feild is on class only
+            //Person p1 = new Person("Amal",21);
+            //p1._internalCode = "" That will give us error
+
+
             Student s1 =new Student("Amal Obaidat" , 21 ,"Tabaria" , 12);
             Student s2 = new Student("Noor Obaidat", 11, "Tonis", 6);
             Student s3 = new Student("Heba Shaheen", 15, "Alshamleh", 9);
@@ -18,7 +23,7 @@ namespace Schoolsystem_Task5
             Teacher t2 = new Teacher("Tuqa Obaidat", 33, "English");
 
             s1.DisplayInfo();
-
+    
             Console.WriteLine();
             Console.WriteLine();
 

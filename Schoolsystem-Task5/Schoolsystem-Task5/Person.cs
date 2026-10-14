@@ -11,11 +11,9 @@ namespace Schoolsystem_Task5
         public string name;
         public int Age { get; set; }
 
-        //We can't access to this feild outside this class because it's private so this is the access scop of the feild only
+        //We can't access to this feilds outside this class because it's private so this is the access scope of the feilds only
         private string _internalCode;
         private string SName;
-        private string stuName;
-        private int stuAge;
 
         protected string SchoolName {
             get { return SName; } 
@@ -27,10 +25,10 @@ namespace Schoolsystem_Task5
             SchoolName = schoolName;
         }
 
-        public Person(string stuName, int stuAge)
+        public Person(string TName, int TAge)
         {
-            name = stuName;
-            Age = stuAge;
+            name = TName;
+            Age = TAge;
         }
 
         public void DisplayInfo()
